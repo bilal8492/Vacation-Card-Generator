@@ -1,0 +1,141 @@
+#main {
+  display: flex;
+  /* justify-content: flex-end;
+    flex-direction: row; */
+  flex-direction: row;
+  /* width: 100%;
+    height: 100%; */
+  justify-content: space-evenly;
+}
+body{
+    background-color: rgba(227, 52, 52, 0.65)
+}
+.container {
+  width: 1152px;
+  background-color: rgba(229, 229, 229, 0.65);
+  margin: 0 auto;
+  min-height: 1420px;
+}
+#logo {
+  width: 455px;
+  height: 348px;
+  margin-right: 50px;
+  margin-top: 122px;
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+}
+#userinfo {
+  width: 341px;
+  height: 359px;
+  margin-top: 98px;
+  margin-left: 40px;
+  background-color: rgba(148, 144, 232, 0.24);
+  padding: 41px 76px 0 76px;
+}
+
+input {
+  width: 336px;
+  height: 57px;
+  border: 0;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 0 0 0 5px;
+}
+#link {
+  margin-top: 23px;
+}
+#comment {
+  margin-top: 23px;
+  width: 336px;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 0 0 0 5px;
+  border: 0px;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 341px;
+  margin-top: 23px;
+}
+#btn {
+  border: 0;
+  width: 143px;
+  height: 43px;
+  font-size: 24px;
+  line-height: 31px;
+  cursor: pointer;
+}
+.logo {
+  width: 29.5px;
+  height: 29.5px;
+  padding-top: 6px;
+}
+#border {
+  width: 982px;
+  height: 0px;
+  border-bottom: 2px solid;
+  margin: 69px auto 66px auto;
+}
+.card {
+  width: 274px;
+  height: 374px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 60px;
+  position: relative;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.card h1,
+p {
+  padding-left: 18px;
+  padding-right: 7px;
+}
+
+.card p {
+  margin-top: 0;
+}
+
+.card h1 {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin: 0;
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+}
+
+.card-container {
+  width: 982px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
