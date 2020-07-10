@@ -54,6 +54,7 @@ input {
   padding: 0 0 0 5px;
   border: 0px;
 }
+
 .btn-div {
   display: flex;
   justify-content: center;
@@ -68,6 +69,10 @@ input {
   font-size: 24px;
   line-height: 31px;
   cursor: pointer;
+}
+.vacImage {
+  width: 274px;
+  height: 182px;
 }
 .logo {
   width: 29.5px;

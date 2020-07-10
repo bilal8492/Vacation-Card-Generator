@@ -10,13 +10,15 @@
     <div class="container">
         <div id="main">
             <div id="userinfo">
-                <input type="text" id="place" name="Place" placeholder="Vacation Place"> <br>
+                <form method="dialog">
+                <input maxlength="15" type="text" id="place" name="Place" placeholder="Vacation Place" required> <br>
 
-                <input type="text" name="Link" id="link" placeholder="Image Url"> <br>
-                <textarea rows="3" id="comment" class="input-textarea" name="comment"
-                    placeholder="Enter your comment here..."></textarea> <br>
-                <div class="btn-div"><button id="btn"> <img src="Images/Logo.svg" alt="logo" class="logo"> Add </button>
+                <input type="text" name="Link" id="link" placeholder="Image Url" required> <br>
+                <textarea maxlength="140" rows="3" id="comment" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..." required></textarea> <br> 
+                <div class="btn-div"><button id="btn"> <img src="Images/Logo.svg" alt="logo" class="logo"> <span> Add</span> </button>
                 </div>
+            </form>
             </div>
             <div id="logo">
                 <img src="Images/undraw_journey_lwlj.svg" alt="Vacation">
@@ -24,71 +26,15 @@
 
         </div>
         <div id="border"> </div>
-        <div class="card-container">
+        <div id="card-container" class="card-container">
             <div class="card">
-                <img src="Images/image.svg" alt="Image">
+                <img class="vacImage" src="Images/image.svg" alt="Image">
                 <img class="cancel-icon" src="Images/cancel.svg">
                 <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
+                <p class="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
                     turpis at leo scelerisque interdum bibendum ut tellus.</p>
             </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-            <div class="card">
-                <img src="Images/image.svg" alt="Image">
-                <img class="cancel-icon" src="Images/cancel.svg">
-                <h1> Place 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis pellentesque viverra. Sed id
-                    turpis at leo scelerisque interdum bibendum ut tellus.</p>
-            </div>
-
+            
         </div>
     </div>
     </div>
