@@ -40,9 +40,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       
     }
     function delbtn() {
+        div.className = "card slide-bottom";
+        setTimeout(() => { 
+            div.remove();
+        }, 200);
         
-        div.remove();
-
     }
   });
 });
