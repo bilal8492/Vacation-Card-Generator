@@ -7,8 +7,8 @@
     height: 100%; */
   justify-content: space-evenly;
 }
-body{
-    background-color: rgba(227, 52, 52, 0.65)
+body {
+  background-color: rgba(227, 52, 52, 0.65);
 }
 .container {
   width: 1152px;
@@ -143,4 +143,33 @@ p {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+@media (max-width: 750px) {
+  #logo {
+    width: 255px;
+    height: 200px;
+  }
+  #main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #userinfo {
+    margin: 0;
+    width: 320px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  #border {
+    width: 100%;
+  }
 }

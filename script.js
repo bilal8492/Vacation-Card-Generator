@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       icon.className = "cancel-icon";
       icon.src = "Images/cancel.svg";
       div.appendChild(icon);
+      icon.title='del'
+      icon.addEventListener('click', delbtn );
 
       var heading = document.createElement("h1");
       heading.innerText = place.value;
@@ -34,6 +36,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       var element = document.getElementById("card-container");
       element.prepend(div);
+
+      
+    }
+    function delbtn() {
+        
+        div.remove();
+
     }
   });
 });
