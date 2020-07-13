@@ -4,12 +4,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var imgLink = document.getElementById("link");
   var comment = document.getElementById("comment");
   var cardContainer = document.getElementsByClassName("card-container");
+
+  function delbtn(e) {
+    var card = e.currentTarget.parentElement;
+    card.className = "card slide-bottom";
+    setTimeout(() => {
+      card.remove();
+    }, 200);
+  }
+  
+  var cancelIcon = document
+    .getElementsByClassName("cancel-icon")[0]
+    .addEventListener("click", delbtn);
+
   button.addEventListener("click", function () {
     if (
       place.value.length > 0 &&
       imgLink.value.length > 0 &&
       comment.value.length > 0
     ) {
+      createCard();
+    }
+    function createCard() {
       var div = document.createElement("div");
       div.className = "card";
 
@@ -22,29 +38,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
       icon.className = "cancel-icon";
       icon.src = "Images/cancel.svg";
       div.appendChild(icon);
-      icon.title='del'
-      icon.addEventListener('click', delbtn );
+      icon.title = "del";
+      icon.addEventListener("click", delbtn);
 
       var heading = document.createElement("h1");
       heading.innerText = place.value;
       div.appendChild(heading);
 
       var textarea = document.createElement("p");
-      textarea.className="textarea";
+      textarea.className = "textarea";
       textarea.textContent = comment.value;
       div.appendChild(textarea);
 
       var element = document.getElementById("card-container");
       element.prepend(div);
+    }
+    
 
-      
-    }
-    function delbtn() {
-        div.className = "card slide-bottom";
-        setTimeout(() => { 
-            div.remove();
-        }, 200);
-        
-    }
+    // div.addEventListener('click',function(event){
+    //     if (place.value.length > 0 &&
+    //         imgLink.value.length > 0 &&
+    //         comment.value.length > 0) {
+
+    //     }
+    // })
   });
 });
