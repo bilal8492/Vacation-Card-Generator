@@ -158,10 +158,17 @@ p {
   right: 10px;
   cursor: pointer;
 }
+.random-link{
+  color: #fff;
+  cursor: pointer;
+  margin: 3px;
+}
+
 @media (max-width: 750px) {
   #logo {
     width: 255px;
     height: 200px;
+    margin: 0;
   }
   #main {
     flex-direction: column-reverse;
@@ -171,6 +178,7 @@ p {
   #userinfo {
     margin: 0;
     width: 320px;
+    padding: 41px 63px 0 62px;
   }
   .card-container {
     display: flex;
@@ -184,6 +192,6 @@ p {
     width: 100%;
   }
   #border {
-    width: 100%;
+    width: 90%;
   }
 }
